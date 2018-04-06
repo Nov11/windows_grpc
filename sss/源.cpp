@@ -12,6 +12,7 @@ public:
 	virtual ::grpc::Status Add(::grpc::ServerContext* context,
 		const ::calc::Request* request, ::calc::Response* response) override
 	{
+		std::cout << "incomming parameter : " << request->a() << " " << request->b() << std::endl;
 		response->set_sum(request->a() + request->b());
 		return grpc::Status::OK;
 	}
