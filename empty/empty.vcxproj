@@ -118,7 +118,8 @@
     <CustomBuild Include="calculator.proto">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\repo\vcpkg\installed\x86-windows\tools\protoc --cpp_out=. calculator.proto
-D:\repo\vcpkg\installed\x86-windows\tools\protoc --grpc_out=. --plugin=protoc-gen-grpc=D:\repo\vcpkg\installed\x86-windows\tools\grpc\grpc_cpp_plugin.exe calculator.proto</Command>
+D:\repo\vcpkg\installed\x86-windows\tools\protoc --grpc_out=. --plugin=protoc-gen-grpc=D:\repo\vcpkg\installed\x86-windows\tools\grpc\grpc_cpp_plugin.exe calculator.proto
+D:\repo\vcpkg\installed\x86-windows\tools\protoc --grpc_out=. --plugin=protoc-gen-grpc=D:\repo\vcpkg\installed\x86-windows\tools\grpc\grpc_php_plugin.exe calculator.proto</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nnnn</Outputs>
     </CustomBuild>
